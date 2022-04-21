@@ -43,7 +43,8 @@ class getConfigInformation:
 
 
 if __name__ == "__main__":    
-    inifilepath = r"C:\Users\Public\personinf.ini"    
+    # inifilepath = r"C:\Users\Public\personinf.ini" 
+    inifilepath = r"personinf.ini"   
     userID, Passcode = getConfigInformation(inifilepath).getPersonalInformation()
     emailhost, senderEmailAddr,authentication = getConfigInformation(inifilepath).getEmailConfig()
     print("username:\t", userID , "\npassword:\t", Passcode)

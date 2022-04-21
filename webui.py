@@ -28,7 +28,8 @@ def get_global_webdriver():
 def login(url='http://www.baidu.com'):
     ''' fill the url and log in with an existing username and password.'''
     
-    inifilepath = r"C:\Users\Public\personinf.ini"
+    # inifilepath = r"C:\Users\Public\personinf.ini"
+    inifilepath = r"personinf.ini"
     username, password = getConfigInformation(inifilepath).getPersonalInformation()
     wd = get_global_webdriver()
     wd.get(url)

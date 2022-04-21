@@ -19,6 +19,7 @@ If anybody else wants to use his own information in the personinf.ini provided i
     2. remove both "infifilepath" in the function send_mail().
 '''
 inifilepath = r"C:\Users\Public\personinf.ini"
+inifilepath = r"personinf.ini"
 
 def send_mail(subject1= 'name1', receivers:list = getConfigInformation(inifilepath).GetDestinationEmails()):
     '''subject1: It will be the information in the subject of the sent mail. GSTORE[subject1] is the result of clocking-in (True: success & False: failed).
